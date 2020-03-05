@@ -1,0 +1,10 @@
+name: FarmManager
+main: ru.ruscalworld.farmmanager.FarmManager
+version: '0.2'
+commands:
+    farmmanager:
+        aliases: [fm,farm]
+        description: Main command of FarmManager
+        permission: farmmanager.command
+    spawnrate:
+        description: Shows current mob spawn parameters
