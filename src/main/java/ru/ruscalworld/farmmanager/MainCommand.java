@@ -30,12 +30,12 @@ public class MainCommand implements CommandExecutor {
                     }
                 }
             } else commandSender.sendMessage("§8§l=====================\n" +
-                    "§9FarmManager §fis a simple plugin to schedule change of mob spawn limits.\n" +
-                    "§fWritten by §9RuscalWorld §ffor §6Bortexel §fMinecraft server.\n" +
-                    "§fIP: §9play.bortexelmc.ru\n" +
-                    "§fSource code: §9https://github.com/RuscalWorld/FarmManager\n" +
-                    "§fPlugin version: " + plugin.getDescription().getVersion() + "\n" +
-                    "§f© RuscalWorld, 2020\n" +
+                    " §9FarmManager §fis a simple plugin to schedule change of mob spawn limits.\n" +
+                    " §fWritten by §9RuscalWorld §ffor §6Bortexel §fMinecraft server.\n" +
+                    " §fIP: §9play.bortexelmc.ru\n" +
+                    " §fSource code: §9https://github.com/RuscalWorld/FarmManager\n" +
+                    " §fPlugin version: §9" + plugin.getDescription().getVersion() + "\n" +
+                    " §f© RuscalWorld, 2020\n" +
                     "§8§l=====================");
         }
 
