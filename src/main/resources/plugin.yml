@@ -1,6 +1,8 @@
 name: FarmManager
 main: ru.ruscalworld.farmmanager.FarmManager
-version: '0.2'
+author: RuscalWorld
+api-version: '1.15'
+version: '0.2.1'
 commands:
     farmmanager:
         aliases: [fm,farm]
