@@ -29,8 +29,14 @@ public class MainCommand implements CommandExecutor {
                         commandSender.sendMessage("§fSet spawn multiplier to §9" + multiplier + "§f!");
                     }
                 }
-
-            } /* TODO Default command response*/
+            } else commandSender.sendMessage("§8§l=====================\n" +
+                    "§9FarmManager §fis a simple plugin to schedule change of mob spawn limits.\n" +
+                    "§fWritten by §9RuscalWorld §ffor §6Bortexel §fMinecraft server.\n" +
+                    "§fIP: §9play.bortexelmc.ru\n" +
+                    "§fSource code: §9https://github.com/RuscalWorld/FarmManager\n" +
+                    "§fPlugin version: " + plugin.getDescription().getVersion() + "\n" +
+                    "§f© RuscalWorld, 2020\n" +
+                    "§8§l=====================");
         }
 
         return false;
