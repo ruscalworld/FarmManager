@@ -43,28 +43,10 @@ public class FarmManager extends JavaPlugin {
         int day = cal.get(Calendar.DAY_OF_WEEK);
         int hour = cal.get(Calendar.HOUR_OF_DAY);
 
-        switch (day) {
-            case Calendar.TUESDAY:
-                monster_limit = 50;
-                animal_limit = 10;
-                water_animal_limit = 5;
-                ambient_limit = 10;
-                break;
-            case Calendar.MONDAY:
-            case Calendar.WEDNESDAY:
-            case Calendar.THURSDAY:
-                monster_limit = 10;
-                animal_limit = 3;
-                water_animal_limit = 2;
-                ambient_limit = 2;
-                break;
-            default:
-                monster_limit = 7;
-                animal_limit = 2;
-                water_animal_limit = 1;
-                ambient_limit = 1;
-                break;
-        }
+        monster_limit = 7;
+        animal_limit = 2;
+        water_animal_limit = 1;
+        ambient_limit = 1;
 
         if (hour == 0) {
             monster_limit = 70;
