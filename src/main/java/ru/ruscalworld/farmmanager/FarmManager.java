@@ -38,6 +38,7 @@ public class FarmManager extends JavaPlugin {
         int animal_limit;
         int water_animal_limit;
         int ambient_limit;
+        int water_ambient_limit;
 
         cal.setTimeInMillis(System.currentTimeMillis());
         int day = cal.get(Calendar.DAY_OF_WEEK);
@@ -47,12 +48,14 @@ public class FarmManager extends JavaPlugin {
         animal_limit = 2;
         water_animal_limit = 1;
         ambient_limit = 1;
+        water_ambient_limit = 1;
 
         if (hour == 0) {
             monster_limit = 70;
             animal_limit = 15;
             water_animal_limit = 5;
             ambient_limit = 15;
+            water_ambient_limit = 20;
         }
 
         File configFile = new File(getDataFolder() + "/../..", "bukkit.yml");
@@ -68,6 +71,7 @@ public class FarmManager extends JavaPlugin {
         config.set("spawn-limits.animals", animal_limit);
         config.set("spawn-limits.water-animals", water_animal_limit);
         config.set("spawn-limits.ambient", ambient_limit);
+        config.set("spawn-limits.water-ambient", water_ambient_limit);
 
         try {
             config.save(configFile);
