@@ -6,7 +6,7 @@
 
     <groupId>ru.ruscalworld.farmmanager</groupId>
     <artifactId>FarmManager</artifactId>
-    <version>0.2.3</version>
+    <version>1.0</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
