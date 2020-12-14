@@ -20,9 +20,6 @@ public class FarmManager extends JavaPlugin {
 
         Objects.requireNonNull(getCommand("spawnrate")).setExecutor(new SpawnrateCommand());
         Objects.requireNonNull(getCommand("spawnrate")).setTabCompleter(new EmptyTabCompleter());
-
-        /*PluginManager pm = Bukkit.getPluginManager();
-        pm.registerEvents(new SpawnListener(this), this);*/
     }
 
     @Override

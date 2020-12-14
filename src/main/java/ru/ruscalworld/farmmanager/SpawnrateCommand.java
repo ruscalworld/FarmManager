@@ -9,7 +9,6 @@ import org.jetbrains.annotations.NotNull;
 public class SpawnrateCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, Command command, @NotNull String alias, @NotNull String[] args) {
-
         if (command.getLabel().equals("spawnrate")) {
             int monsters = Bukkit.getMonsterSpawnLimit();
             int animals = Bukkit.getAnimalSpawnLimit();
