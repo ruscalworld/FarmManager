@@ -100,4 +100,20 @@ public class Spawnrate {
     public int getMonsterLimit() {
         return this.monsterLimit;
     }
+
+    public int getAnimalLimit() {
+        return this.animalLimit;
+    }
+
+    public int getWaterAnimalLimit() {
+        return this.waterAnimalLimit;
+    }
+
+    public int getAmbientLimit() {
+        return this.ambientLimit;
+    }
+
+    public int getWaterAmbientLimit() {
+        return this.waterAmbientLimit;
+    }
 }

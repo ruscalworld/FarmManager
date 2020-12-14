@@ -1,9 +1,11 @@
 package ru.ruscalworld.farmmanager;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.Timestamp;
 import java.util.Objects;
+import java.util.logging.Level;
 
 public class FarmManager extends JavaPlugin {
 
@@ -30,6 +32,14 @@ public class FarmManager extends JavaPlugin {
 
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         Spawnrate spawnrate = Spawnrate.getByTime(timestamp);
+
+        Bukkit.getLogger().info(String.format("Applying spawnrate settings: %s %s %s %s %s",
+                spawnrate.getMonsterLimit(),
+                spawnrate.getAnimalLimit(),
+                spawnrate.getWaterAnimalLimit(),
+                spawnrate.getAmbientLimit(),
+                spawnrate.getWaterAmbientLimit()
+        ));
         spawnrate.apply();
     }
 }
