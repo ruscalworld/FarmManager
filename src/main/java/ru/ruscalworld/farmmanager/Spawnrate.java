@@ -96,4 +96,8 @@ public class Spawnrate {
             e.printStackTrace();
         }
     }
+
+    public int getMonsterLimit() {
+        return this.monsterLimit;
+    }
 }
