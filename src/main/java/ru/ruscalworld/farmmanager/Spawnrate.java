@@ -55,7 +55,7 @@ public class Spawnrate {
         // Только в 10 часов с понедельника по четверг
         if (hour == 10 && (day == Calendar.MONDAY || day == Calendar.TUESDAY || day == Calendar.WEDNESDAY || day == Calendar.THURSDAY)) {
             monsterLimit = 35;
-            animalLimit = 35;
+            animalLimit = 15;
             waterAnimalLimit = 5;
             ambientLimit = 7;
             waterAmbientLimit = 8;
